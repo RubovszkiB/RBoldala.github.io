@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="hu">
-
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pita</title>
+    <title>Document</title>
     <style>
         body {
         margin: 0;
@@ -64,44 +63,43 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    
 </head>
-
 <body>
     <div class="sidebar">
-        <a  href="https://rubovszkib.github.io/collage/">Kollázs</a>
+        <a href="https://rubovszkib.github.io/collage/">Kollázs</a>
         <a href="https://rubovszkib.github.io/collage/keplink">Képlink</a>
         <a  href="https://rubovszkib.github.io/collage/orarend">Órarend</a>
         <a  href="https://rubovszkib.github.io/collage/listak">Listák</a>
         <a href="https://rubovszkib.github.io/collage/evszakok">Évszakok</a>
-        <a  href="https://rubovszkib.github.io/collage/urlap">Űrlap</a>
+        <a href="https://rubovszkib.github.io/collage/urlap">Űrlap</a>
         <a  href="https://rubovszkib.github.io/collage/tavkozles">Távkölés</a>
-        <a class="active" href="https://rubovszkib.github.io/collage/pita">Pitagorasz</a>
-        <a  href="https://rubovszkib.github.io/collage/bejelentkezes">Bejelentkezés</a>
+        <a  href="https://rubovszkib.github.io/collage/pita">Pitagorasz</a>
+        <a class="active" href="https://rubovszkib.github.io/collage/bejelentkezes">Bejelentkezés</a>
         </div>
-      
+        <div class="content">
+    <fieldset style="width: 17%;">
+        <legend>Bejelentkezés</legend>
+        <input type="text" id="user"  placeholder="Felhasználónév">   
+        <br>
+        <input type="password" id="pass" placeholder="Jelszó">  
+        <br>
+        <button onclick="belep(user.value, pass.value)" >ok</button>
+    </fieldset>
+
+<h1></h1>
+<script>
   
-    <div class="content">
-        <img src="https://www.calculat.org/hu/terulet-kerulet/obr/oo-pt-1.svg" alt="Ha">
-        <div>
-            <h1>a</h1>
-        </div> <input placeholder="a" id="a" type="number">
-        <div>
-            <h1></h1>
-        </div> <input placeholder="b" id="b" type="number">
-        <button onclick="pita(a.value,b.value)">eredmény</button>
-        <p id="eredmeny"></p>
-    </div>
-    <script>
-        function pita(a, b) {
-            c = Math.sqrt(a * a + b * b)
-            document.getElementById("eredmeny").innerHTML = c
-
-        }
-
-
-    </script>
-
-</body>
-
+function belep(username, password)
+{
+if(username=="SZAR"){
+    if(password=="gugi"){
+        alert("SUII")
+    }
+}
+else{
+alert("")
+}
+}
+</script>
+</div></body>
 </html>
